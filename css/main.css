@@ -1,0 +1,405 @@
+/*
+Центральный контейнер с отступами сверху и снизу
+ */
+.main-container {
+    margin: 20px 0 12px 0;
+}
+/*
+Левый контейнер с новостями дня
+ */
+.left-block {
+    width: 250px;
+    box-sizing: border-box;
+    float: left;
+
+    background-color: white;
+}
+/*
+Обертка левого контейнера, в которую закинул
+все свежие новости
+*/
+.left-block-wrapper {
+    padding: 0 15px 25px 18px;
+}
+/*
+Заголвок левого контейнера
+*/
+.left-block-header {
+    margin: 0 0 27px 0;
+    padding: 25px 0 25px 18px;
+    font-size: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+/*
+Блок свежей новости
+ */
+.fresh-article-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fresh-article {
+    margin: 0 0 25px 0;
+    width: 210px;
+}
+/*
+Заголовок свежей новости
+ */
+.fresh-article-header {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+}
+/*
+Стили для ссылки в заголовке
+ */
+.fresh-article-header > a {
+    text-decoration: none;
+    color: black;
+}
+/*
+Кнопка Все новости в левом блоке
+ */
+.all-news-button {
+    margin: 40px auto 0;
+    padding: 14px 0;
+    width: 175px;
+    display: block;
+    color: #448ccb;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid #448ccb;
+    border-radius: 25px;
+}
+/*
+Центральный контенер
+*/
+.central-block {
+    margin: 0 18px;
+    width: 463px;
+    float: left;
+}
+/*
+Контейнер заглавной статьи
+*/
+.main-article {
+    position: relative;
+}
+/*
+Затемнение изображения с градиентом
+*/
+.main-article::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, transparent, rgba(0,0,0, 0.45));
+    z-index: 1;
+}
+/*
+Стили для изображения
+*/
+.main-article-img {
+    width: 462px;
+    display: block;
+    height: 322px;
+    z-index: 0;
+}
+/*
+Контейнер который выравнивает контент в блоке заглавной
+новости
+*/
+.main-article-content {
+    width: 365px;
+    position: absolute;
+    top: 109px;
+    left: 22px;
+    z-index: 2;
+}
+/*
+Стили заголовка заглавной новости
+ */
+.main-article-header {
+    margin: 17px 0;
+    color: white;
+    font-size: 29px;
+    line-height: 35px;
+    font-weight: bold;
+}
+/*
+ Стили для ссылки вложенной в .main-article-header
+*/
+.main-article-header > a {
+    text-decoration: none;
+    color: white;
+}
+/*
+ Стили для отображения категории новостей
+ */
+.main-article-category {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+.main-article-category::before {
+    content: "/ "
+}
+/*
+ Стили для отображения даты и времени заглавной новости
+ */
+.main-article-date,
+.main-article-time {
+    font-size: 12px;
+    color: white;
+}
+
+.main-article-time {
+    margin: 0 0 0 12px;
+}
+
+/*
+Иконка времени
+ */
+.main-article-time::before {
+    margin: 0 5px 0 0;
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url("../img/icon-clock-white.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*
+Контейнер с списком новостей
+*/
+.main-article-list {
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+}
+/*
+Блок новости
+ */
+.article-item {
+    margin: 0 19px 18px 0;
+    float: left;
+    width: 222px;
+}
+/*
+Приминение стиля для каждого второго элемента
+ */
+.article-item:nth-child(2n) {
+    margin: 0 0 18px 0;
+}
+/*
+Заголовок статьи в центральном блоке
+ */
+.article-header {
+    margin: 0 0 13px 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.article-header > a {
+    text-decoration: none;
+    color: black;
+}
+/*
+Блок с популярными новостями
+ */
+.popular-news {
+    margin: 0 0 58px 0;
+    background-color: white;
+}
+
+.popular-news-right {
+    position: relative;
+    float: right;
+    width: 410px;
+    height: 394px;
+    vertical-align: bottom;
+    box-sizing: border-box;
+}
+/*
+Заголовки популярных новостей
+ */
+.popular-news-header {
+    margin: 0;
+    padding: 23px 0 20px 17px;
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 1px solid #ebebeb;
+}
+/*
+Блок с списоком популярных новостей
+ */
+.popular-news-list {
+    margin: 0 10px 27px 16px;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    list-style: none;
+}
+ /*
+ Самая свежая и популярная новость
+  */
+.popular-article-first {
+    float: left;
+    display: block;
+    position: relative;
+    width: 589px;
+    height: 394px;
+}
+/*
+Наложение гардиента на изображение популярной новости
+ */
+.popular-article-first::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, transparent, rgba(0,0,0,0.45));
+    z-index: 0;
+}
+/*
+Ширина заголовка популярной новости
+ */
+.popular-article-first header {
+    width: 400px;
+}
+/*
+Заголовок популярной новости
+ */
+.popular-article-first-header {
+    margin: 20px 0 9px 0;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.popular-article-first-header > a {
+    text-decoration: none;
+    color: white;
+}
+
+.popular-article {
+    margin: 22px 0 0 0;
+    display: inline-block;
+}
+
+.popular-article:nth-child(1) {
+    margin: 0 0 8px 0;
+}
+
+.popular-article-content {
+    position: absolute;
+    left: 18px;
+    top: 104px;
+    width: 505px;
+    font-size: 14px;
+    color: white;
+    z-index: 2;
+}
+
+.popular-article-text {
+    margin: 22px 0 0 0;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.popular-article-header {
+    margin: 0 0 14px 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.popular-article-header > a {
+    text-decoration: none;
+    color: black;
+}
+
+.article-content {
+    width: 208px;
+}
+
+.article-footer {
+    width: 194px;
+    font-size: 12px;
+}
+/*
+Прижимаем комментарии и время к правому краю
+ */
+.article-footer-right {
+    float: right;
+}
+/*
+Прижимаем комментарии и время к левому краю
+ */
+.article-footer-left {
+    float: left;
+}
+/*
+Присваиваем вертикальное выравнивание для времени
+ */
+.article-footer time {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 14px 0 0;
+}
+/*
+Присваиваем вртикальное выравнивание для счетчика комментариев
+ */
+.article-footer .article-comments {
+    display: inline-block;
+    vertical-align: middle;
+}
+/*
+Добавляем иконку часов
+ */
+.article-footer time::before {
+    content: "";
+    margin: 0 4px 0 0;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+
+    background-image: url("../img/icon-time.png");
+    background-size: cover;
+}
+/*
+Добавляем иконку комментриев
+ */
+.article-footer .article-comments::before {
+    content: "";
+    margin: 0 5px 0 0;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+
+    background-image: url("../img/icon-comments.png");
+    background-size: cover;
+}
+/*
+Стили для категории новости
+ */
+.article-category {
+    margin: 0 10px 0 0;
+    color: #91919f;
+    text-decoration: none;
+    opacity: 0.8;
+    font-size: 12px;
+}
+
+.article-category::before {
+    content: "/ ";
+}

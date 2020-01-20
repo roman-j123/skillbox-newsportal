@@ -1,0 +1,123 @@
+.site-footer {
+    background-color: #00122f;
+}
+
+.site-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-content {
+    padding: 55px 0 32px 0;
+}
+
+.category-list {
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    column-count: 2;
+    column-gap: 27px;
+}
+
+.category-item {
+    margin: 0 0 15px 0;
+}
+
+.footer-navigation-list {
+    margin: 6px 0 0 185px;
+    padding: 0;
+    float: left;
+    vertical-align: top;
+    list-style: none;
+}
+
+.footer-navigation-item {
+    margin: 0 0 15px 0;
+}
+
+.social-contacts {
+    float: right;
+}
+
+.social-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: top;
+}
+
+.social-item {
+    display: inline-block;
+    width: 39px;
+    height: 39px;
+    vertical-align: top;
+    margin: 0 18px 0 0;
+}
+
+.social-item a {
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.social-item img {
+    vertical-align: middle;
+
+}
+
+.social-item:nth-last-child(1) {
+    margin: 0;
+}
+
+.footer-contacts {
+    margin: 47px 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contacts-item {
+    margin: 0 0 25px 0;
+}
+
+.call-number::before {
+    margin: 0 20px 0 0;
+    content: "";
+    display: inline-block;
+    vertical-align: baseline;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/call-answer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.email-report::before {
+    margin: 0 20px 0 0;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    background-image: url("../img/envelope.png");
+    background-repeat: no-repeat;
+}
+
+.site-copyright {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    opacity: 0.15;
+    border-top: 1px solid white;
+}
+
+.site-copyright p {
+    margin: 0;
+    padding: 15px 0;
+}

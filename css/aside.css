@@ -1,0 +1,13 @@
+.right-block {
+    width: 250px;
+    float: right;
+}
+
+.right-block .banner-link {
+    display: inline-block;
+    margin: 0 0 16px 0;
+}
+
+.banner-link:nth-last-child(1) {
+    margin: 0 0 0 0;
+}
