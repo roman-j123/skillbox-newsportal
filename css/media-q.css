@@ -58,6 +58,15 @@
     .header-right .header-item:nth-child(2) {
         display: none;
     }
+    .mobile-date {
+        display: block;
+    }
+    .mobile-time {
+        display: block;
+    }
+    .site-search {
+        display: none;
+    }
     /* Навигация сайта */
     .navigation-list {
         display: none;

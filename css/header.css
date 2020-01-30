@@ -136,6 +136,13 @@
     display: none;
 }
 
+.mobile-date {
+    display: none;
+}
+.mobile-time {
+    display: none;
+}
+
 .navigation-list {
     margin: 0;
     padding: 0;
