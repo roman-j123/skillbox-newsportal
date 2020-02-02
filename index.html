@@ -2,50 +2,35 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/aside.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/media-q.css">
     <title>Новостное агенство</title>
 </head>
 <body>
 
 <h1 class="visually-hidden">Новостное агенство</h1>
-<div class="site-top">
+<div class="site-top clearfix">
     <div class="wrapper">
-        <div class="top-container">
-            <p class="top-text">Самые <a href="#">свежие новости</a> в реальном времени</p>
-            <time class="top-time">12:30 19.06.2019</time>
-        </div>
+        <p class="top-text">Самые <a href="#">свежие новости</a> в реальном времени</p>
+        <time class="top-time">12:30 19.06.2019</time>
     </div>
 </div>
 <header class="site-header">
     <div class="wrapper">
-        <div class="header-container">
+        <div class="header-container clearfix">
             <div class="header-left">
-                <button class="mobile-button">Nav</button>
-                <div class="site-logo">
-                    <img src="img/internet.png" width="40" height="40" alt="Планета земля">
-                    <span class="site-logo-text">Новостное агенство</span>
-                </div>
+                <img src="img/logo.png" class="header-item site-logo" width="121" height="40" alt="Логотип сайта">
                 <a href="#" class="header-item">
                     <span class="city">Москва</span>
                     <span class="arrow"></span>
                 </a>
-                <button class="search-button-mob">search</button>
             </div>
 
             <div class="header-right">
-                <time class="header-item mobile-date">
-                    19 Инюня, Вт
-                </time>
-                <time class="header-item mobile-time">
-                10:48
-                </time>
                 <div class="header-item header-weather">
                     <img src="img/cloudy.svg" width="35" height="20" alt="Облачно">
                     <span>+22&#176;C</span>
@@ -83,8 +68,7 @@
                 <div class="left-block-wrapper">
                     <ul class="fresh-article-list">
                         <li class="fresh-article">
-                            <h3 class="fresh-article-header"><a href="#">Кот Ахилл предсказал <br>победу российской
-                                сборной <br>над Египтом на ЧМ-2018</a></h3>
+                            <h3 class="fresh-article-header"><a href="#">Кот Ахилл предсказал <br>победу российской сборной <br>над Египтом на ЧМ-2018</a></h3>
 
                             <footer class="article-footer">
                                 <a href="#" class="article-category">ЧМ по футболу</a>
@@ -96,8 +80,7 @@
                         </li>
 
                         <li class="fresh-article">
-                            <h3 class="fresh-article-header"><a href="#">«Нафтогаз»: суд разрешил заморозить активы
-                                «Газпрома» в Великобритании</a></h3>
+                            <h3 class="fresh-article-header"><a href="#">«Нафтогаз»: суд разрешил заморозить активы «Газпрома» в Великобритании</a></h3>
                             <footer class="article-footer">
                                 <a href="#" class="article-category">Политика</a>
                                 <div class="article-footer-right">
@@ -108,8 +91,7 @@
                         </li>
 
                         <li class="fresh-article">
-                            <h3 class="fresh-article-header"><a href="#">Минтранс предписал оборудовать общественный
-                                транспорт кондиционерами</a></h3>
+                            <h3 class="fresh-article-header"><a href="#">Минтранс предписал оборудовать общественный транспорт кондиционерами</a></h3>
                             <footer class="article-footer">
                                 <a href="#" class="article-category">Транспорт</a>
                                 <div class="article-footer-right">
@@ -120,8 +102,7 @@
                         </li>
 
                         <li class="fresh-article">
-                            <h3 class="fresh-article-header"><a href="#">Летние кафе Москвы <br>временно закроются из-за
-                                непогоды</a></h3>
+                            <h3 class="fresh-article-header"><a href="#">Летние кафе Москвы <br>временно закроются из-за непогоды</a></h3>
                             <footer class="article-footer">
                                 <a href="#" class="article-category">Погода</a>
                                 <div class="article-footer-right">
@@ -132,8 +113,7 @@
                         </li>
 
                         <li class="fresh-article">
-                            <h3 class="fresh-article-header"><a href="#">Комплексное благоустройство Щелковского шоссе
-                                завершится в июне</a></h3>
+                            <h3 class="fresh-article-header"><a href="#">Комплексное благоустройство Щелковского шоссе завершится в июне</a></h3>
                             <footer class="article-footer">
                                 <a href="#" class="article-category">Транспорт</a>
                                 <div class="article-footer-right">
@@ -144,8 +124,7 @@
                         </li>
 
                         <li class="fresh-article">
-                            <h3 class="fresh-article-header"><a href="#">В Москве назвали самое популярное мороженое
-                                <br>у болельщиков ЧМ-2018</a></h3>
+                            <h3 class="fresh-article-header"><a href="#">В Москве назвали самое популярное мороженое <br>у болельщиков ЧМ-2018</a></h3>
                             <footer class="article-footer">
                                 <a href="#" class="article-category">ЧМ по футболу</a>
                                 <div class="article-footer-right">
@@ -175,8 +154,7 @@
 
                 <div class="main-article-list clearfix">
                     <article class="article-item">
-                        <img src="img/navalny.jpg"
-                             alt="Алексей Навальный объявил акцию против пенсионной реформы 1 июля">
+                        <img src="img/navalny.jpg" alt="Алексей Навальный объявил акцию против пенсионной реформы 1 июля">
                         <div class="article-content">
                             <h3 class="article-header"><a href="#">Алексей Навальный объявил акцию против пенсионной
                                 реформы 1 июля</a></h3>
@@ -189,8 +167,7 @@
                     </article>
 
                     <article class="article-item">
-                        <img src="img/pasport.jpg"
-                             alt="Дума увеличила пошлины за выдачу загранпаспортов и водительских прав">
+                        <img src="img/pasport.jpg" alt="Дума увеличила пошлины за выдачу загранпаспортов и водительских прав">
                         <div class="article-content">
                             <h3 class="article-header"><a href="#">Дума увеличила пошлины <br>за выдачу загранпаспортов
                                 <br>и водительских прав</a></h3>
@@ -205,8 +182,7 @@
                     <article class="article-item">
                         <img src="img/girl.jpg" alt="В России заработал стриминговый сервис YouTube">
                         <div class="article-content">
-                            <h3 class="article-header"><a href="#">В России заработал стриминговый сервис YouTube</a>
-                            </h3>
+                            <h3 class="article-header"><a href="#">В России заработал стриминговый сервис YouTube</a></h3>
                             <footer class="article-footer">
                                 <a href="#" class="article-category">Интернет</a>
                                 <time>11:17</time>
@@ -218,8 +194,7 @@
                     <article class="article-item">
                         <img src="img/football.jpg" alt="Кейн признан лучшим игроком матча ЧМ-2018 Тунис — Англия">
                         <div class="article-content">
-                            <h3 class="article-header"><a href="#">Кейн признан лучшим игроком матча ЧМ-2018 <br>Тунис —
-                                Англия</a></h3>
+                            <h3 class="article-header"><a href="#">Кейн признан лучшим игроком матча ЧМ-2018 <br>Тунис — Англия</a></h3>
                             <footer class="article-footer clearfix">
                                 <a href="#" class="article-category">Политика</a>
                                 <time>11:39</time>
