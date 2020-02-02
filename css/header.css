@@ -6,8 +6,9 @@
 }
 
 .site-top {
-    padding: 19px 0;
+    padding: 19px 10px;
     background-color: #00122f;
+    box-sizing: border-box;
 }
 
 .site-top a {
@@ -67,11 +68,21 @@
     display: inline-block;
 }
 
+.nav-btn,
+.search-btn {
+    display: none;
+}
+
 .site-logo {
     width: 121px;
     height: 40px;
     margin: 0 55px 0 0;
     vertical-align: middle;
+}
+.site-logo-m {
+    display: none;
+    width: 175px;
+    height: 24px;
 }
 
 .header-weather {

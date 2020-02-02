@@ -3,11 +3,46 @@
         max-width: 480px;
     }
     .site-top {
+        padding: 19px 10px;
         font-size: 12px;
+    }
+    .top-text {
         float: none;
         text-align: center;
     }
+    /* Скрыл блок с временем в шапке сайта */
     .top-time {
+        display: none;
+        float: none;
+    }
+    .header-container {
+        padding: 0 0 0 0;
+    }
+    /* Поставил блокам ширину в 100%*/
+    .header-left,
+    .header-right {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-btn,
+    .search-btn {
+        display: block;
+    }
+    .site-logo {
+        margin: 0 0 0 0;
+        display: none;
+    }
+    .site-logo-m {
+        display: block;
+    }
+    /* Скрыл блоки с поиском и выбором города */
+    .city-list,
+    .site-search {
+        display: none;
+    }
+    /* Скрыл навигацию */
+    .site-navigation {
         display: none;
     }
 }
