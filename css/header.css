@@ -68,9 +68,28 @@
     display: inline-block;
 }
 
+.date-m,
+.time-m {
+    display: none;
+}
+
 .nav-btn,
 .search-btn {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
     display: none;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.nav-btn {
+    background-image: url('../img/burger.svg');
+}
+.search-btn {
+    background-image: url('../img/search.svg');
 }
 
 .site-logo {
